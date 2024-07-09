@@ -15,4 +15,10 @@ public interface ProductService {
     Product save(Product product);
 
     void deleteById(Long id);
+
+    List<Product> findByNameContainingIgnoreCase(String name);
+
+    List<Product> findByBrandContainingIgnoreCase(String brand);
+
+    List<Product> findByColorContainingIgnoreCase(String color);
 }
